@@ -28,6 +28,7 @@ li{margin:2px 0}
 .trades{columns:2;max-width:420px}
 .mail{font-size:1.15rem;font-weight:700}
 footer{margin-top:44px;border-top:1px solid #bdb7a6;padding-top:10px;font-family:Helvetica,Arial,sans-serif;font-size:.8rem;color:#666}
+@media(max-width:600px){.rec table{min-width:0}.rec tr:first-child{display:none}.rec td{display:grid;grid-template-columns:9em 1fr;gap:8px}.rec td::before{content:attr(data-l);font-weight:700;font-size:.75rem;text-transform:uppercase;color:#555}}
 @media(max-width:480px){body{font-size:16px}h1{font-size:1.35rem}}
 </style>
 </head>
@@ -40,7 +41,7 @@ footer{margin-top:44px;border-top:1px solid #bdb7a6;padding-top:10px;font-family
 <p class="ex">EXAMPLE RECORD: made-up values to show the format, not a real district or company.</p>
 <div class="rec"><table>
 <tr><th>Buyer</th><th>Service</th><th>Holder</th><th>Price</th><th>Term / renewal</th><th>Who bid</th><th>District manager</th></tr>
-<tr><td>Example Ranch CDD</td><td>Grounds maintenance</td><td>Sample Lawn Co.</td><td>$00,000 / yr</td><td>Ends MM/YYYY</td><td>Sample Lawn Co., Example Grounds LLC</td><td>Example Mgmt. Services</td></tr>
+<tr><td data-l="Buyer">Example Ranch CDD</td><td data-l="Service">Grounds maintenance</td><td data-l="Holder">Sample Lawn Co.</td><td data-l="Price">$00,000 / yr</td><td data-l="Term / renewal">Ends MM/YYYY</td><td data-l="Who bid">Sample Lawn Co., Example Grounds LLC</td><td data-l="District manager">Example Mgmt. Services</td></tr>
 </table></div>
 <p class="cap">Source for each row: the agenda package or minutes where it shows up.</p>
 
